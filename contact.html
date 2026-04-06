@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Chic Living Spaces. We'd love to hear from you for modern minimalist design trends, partnerships, or general inquiries.">
+    <meta name="keywords" content="contact chic living spaces, interior design inquiry, minimalist decor help, partnership opportunities">
+    <link rel="icon" type="image/webp" href="logo.webp">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Contact Us | Chic Living Spaces">
+    <meta property="og:description" content="Whether you have a question about a modern minimalist design trend or need help finding the perfect decor piece, our inbox is always open.">
+    <meta property="og:image" content="images/about-chic.webp">
+    <meta property="og:type" content="website">
+
+    <title>Contact Us | Chic Living Spaces</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="sticky-header">
+        <div class="container header-container">
+            <div class="site-branding">
+                <a href="index.html" class="site-title">
+                    <img src="logo.webp" alt="Chic Living Spaces Logo" width="150" height="auto" class="site-logo" loading="lazy" decoding="async">
+                </a>
+            </div>
+            <div class="header-actions">
+                <nav class="main-navigation">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="living-room.html">Living Room</a></li>
+                        <li><a href="bedroom.html">Bedroom</a></li>
+                        <li><a href="kitchen.html">Kitchen</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+                <div class="search-wrapper">
+                    <button class="search-btn" aria-label="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                    <div class="search-bar-container">
+                        <input type="text" class="search-input" placeholder="Search inspiration...">
+                        <button class="close-search-btn" aria-label="Close search">&times;</button>
+                    </div>
+                </div>
+                <!-- Mobile Menu Toggle -->
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header section-padding">
+            <div class="container text-center">
+                <span class="subtitle">Contact Us</span>
+                <h1 class="page-title">We’d Love to Hear From You</h1>
+                <p class="page-description mx-auto">Whether you have a question about a modern minimalist design trend, need help finding the perfect decor piece, or just want to share your own chic living space makeover, our inbox is always open. Fill out the form below, and we’ll get back to you within 24-48 hours.</p>
+            </div>
+        </section>
+
+        <!-- Contact Split Layout Section -->
+        <section class="contact-section container section-padding" style="padding-top: 0;">
+            <div class="contact-grid">
+                
+                <!-- Left Side: Form -->
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="Jane Doe" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="emailAddr">Email Address</label>
+                            <input type="email" id="emailAddr" name="emailAddr" placeholder="jane@example.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject / Topic</label>
+                            <div class="custom-select-wrapper">
+                                <select id="subject" name="subject" required>
+                                    <option value="" disabled selected>Select a topic</option>
+                                    <option value="Decor Advice">Decor Advice</option>
+                                    <option value="Partnership">Partnership</option>
+                                    <option value="General Inquiry">General Inquiry</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="How can we help you create your chic space?" required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn w-100">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Right Side: Info & Socials -->
+                <div class="contact-info-wrapper">
+                    <div class="info-card">
+                        <h3>Connect With Us</h3>
+                        <p>We are always looking to collaborate, feature inspiring spaces, and chat about minimalist design solutions.</p>
+                        
+                        <div class="social-spotlight">
+                            <div class="pinterest-icon-large">
+                                <svg viewBox="0 0 24 24" fill="var(--color-text)" width="48" height="48">
+                                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.951-7.252 4.105 0 7.356 2.95 7.356 6.88 0 4.104-2.585 7.424-6.177 7.424-1.206 0-2.342-.627-2.73-1.371l-.746 2.842c-.269 1.022-1 2.302-1.492 3.084 1.155.352 2.383.541 3.652.541 6.62 0 11.984-5.367 11.984-11.987C24.004 5.367 18.637 0 12.017 0z"/>
+                                </svg>
+                            </div>
+                            <p class="spotlight-text">"Follow us on Pinterest for daily minimalist inspiration."</p>
+                            <a href="https://www.pinterest.com/chiclivingspaces09/" target="_blank" rel="noopener noreferrer" class="pinterest-btn">Visit Our Pinterest &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-col about-col">
+                    <h3>Chic Living Spaces</h3>
+                    <p>Curating elegant, minimal, and modern aesthetics for the everyday home. A sanctuary of interior design inspiration.</p>
+                </div>
+                <div class="footer-col links-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col social-col">
+                    <h3>Follow Us</h3>
+                    <a href="https://www.pinterest.com/chiclivingspaces09/" target="_blank" rel="noopener noreferrer" class="social-link pinterest" aria-label="Pinterest">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                            <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.951-7.252 4.105 0 7.356 2.95 7.356 6.88 0 4.104-2.585 7.424-6.177 7.424-1.206 0-2.342-.627-2.73-1.371l-.746 2.842c-.269 1.022-1 2.302-1.492 3.084 1.155.352 2.383.541 3.652.541 6.62 0 11.984-5.367 11.984-11.987C24.004 5.367 18.637 0 12.017 0z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="affiliate-disclosure">
+                <p>Amazon Affiliate Disclosure: As an Amazon Associate, Chic Living Spaces earns from qualifying purchases. This means if you click on an affiliate link and make a purchase, we may receive a small commission at no extra cost to you.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Chic Living Spaces. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

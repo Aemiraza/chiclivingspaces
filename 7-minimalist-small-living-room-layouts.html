@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover 7 minimalist small living room layout ideas that actually work. Master the art of small space living with curated design strategies.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="7 Minimalist Small Living Room Layout Ideas | Chic Living Spaces">
+    <meta property="og:description" content="Transform your small living room into a serene sanctuary with these 7 expert minimalist layout strategies.">
+    <meta name="keywords" content="small living room layout, minimalist living room, room setup ideas, small space furniture, furniture placement tips">
+    <meta property="og:image" content="images/blog-room-setup-hero.png">
+    <meta property="og:type" content="article">
+    <link rel="icon" type="image/webp" href="logo.webp">
+
+    <title>7 Minimalist Small Living Room Layout Ideas | Chic Living Spaces</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .article-container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: var(--spacing-lg) var(--spacing-md);
+        }
+        .article-hero {
+            margin-bottom: var(--spacing-lg);
+        }
+        .article-hero img {
+            width: 100%;
+            height: auto;
+            border-radius: var(--radius-md);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+        }
+        .toc {
+            background-color: var(--color-placeholder-bg);
+            padding: var(--spacing-md);
+            border-radius: var(--radius-md);
+            margin: var(--spacing-md) 0;
+            border: 1px solid var(--color-border);
+        }
+        .toc h2 {
+            font-size: 1.2rem;
+            margin-bottom: var(--spacing-sm);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .toc ul {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+        @media (min-width: 600px) {
+            .toc ul { grid-template-columns: 1fr 1fr; }
+        }
+        .toc a {
+            font-size: 0.95rem;
+            color: var(--color-text-light);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        .toc a:hover {
+            color: var(--color-accent);
+            padding-left: 5px;
+        }
+        .layout-section {
+            margin-bottom: var(--spacing-xl);
+            scroll-margin-top: 100px;
+        }
+        .layout-section h2 {
+            font-size: 2.2rem;
+            margin-bottom: var(--spacing-sm);
+            line-height: 1.2;
+        }
+        .layout-section img {
+            width: 100%;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            border-radius: var(--radius-md);
+            margin: var(--spacing-md) 0;
+        }
+        .box-highlight {
+            background-color: var(--color-placeholder-bg);
+            padding: var(--spacing-md);
+            border-left: 4px solid var(--color-accent);
+            margin: var(--spacing-md) 0;
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+        }
+        .box-highlight h4 {
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            color: var(--color-accent);
+        }
+        .step-list {
+            list-style: none;
+            margin: var(--spacing-md) 0;
+        }
+        .step-list li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 0.8rem;
+            color: var(--color-text-light);
+        }
+        .step-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--color-accent);
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+        .affiliate-link-text {
+            color: var(--color-text);
+            font-weight: 600;
+            border-bottom: 2px solid var(--color-accent);
+            padding-bottom: 2px;
+            transition: var(--transition);
+        }
+        .affiliate-link-text:hover {
+            color: var(--color-accent);
+            border-color: var(--color-accent-hover);
+        }
+        .pro-tips-grid, .mistakes-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-md);
+        }
+        @media (min-width: 768px) {
+            .pro-tips-grid, .mistakes-grid { grid-template-columns: 1fr 1fr; }
+        }
+        .tip-card, .mistake-card {
+            padding: var(--spacing-md);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+            transition: var(--transition);
+        }
+        .tip-card:hover { transform: translateY(-3px); border-color: var(--color-accent); }
+        .faq-section { margin-top: var(--spacing-xl); }
+        .faq-item { margin-bottom: var(--spacing-md); border-bottom: 1px solid var(--color-border); padding-bottom: var(--spacing-md); }
+        .faq-item h4 { margin-bottom: 0.5rem; font-size: 1.1rem; }
+        
+        .author-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: var(--spacing-md);
+            font-size: 0.9rem;
+            color: var(--color-text-light);
+        }
+        .author-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--color-accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--color-text);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="sticky-header">
+        <div class="container header-container">
+            <div class="site-branding">
+                <a href="index.html" class="site-title">
+                    <img src="logo.webp" alt="Chic Living Spaces Logo" width="150" height="auto" class="site-logo">
+                </a>
+            </div>
+            <div class="header-actions">
+                <nav class="main-navigation">
+                    <ul class="nav-links">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="living-room.html">Living Room</a></li>
+                        <li><a href="bedroom.html">Bedroom</a></li>
+                        <li><a href="kitchen.html">Kitchen</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+                <div class="search-wrapper">
+                    <button class="search-btn" aria-label="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                    <div class="search-bar-container">
+                        <input type="text" class="search-input" placeholder="Search inspiration...">
+                        <button class="close-search-btn" aria-label="Close search">&times;</button>
+                    </div>
+                </div>
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="article-container">
+        <!-- Breadcrumbs -->
+        <nav style="margin-bottom: var(--spacing-sm); font-size: 0.85rem; color: var(--color-text-light);">
+            <a href="index.html">Home</a> &nbsp;/&nbsp; <a href="blog.html">Blog</a> &nbsp;/&nbsp; <a href="blog-room-setup.html">Room Setup</a>
+        </nav>
+
+        <header class="article-header">
+            <span class="article-category">Room Setup</span>
+            <h1 class="page-title">7 Minimalist Small Living Room Layout Ideas That Actually Work</h1>
+            
+            <div class="author-meta">
+                <div class="author-img">C</div>
+                <span>By Chic Living Spaces Editorial</span>
+                <span>•</span>
+                <span>March 20, 2026</span>
+            </div>
+
+            <p class="page-description">You don't need a sprawling 2,000 sq ft home to have a living room that feels open, calm, and genuinely beautiful. If you've ever stood in your small living room wondering why it still feels cramped no matter what you do — you're not alone, and you're in the right place.</p>
+            
+            <p>The secret isn't spending more money or buying more stuff. It's about using the right minimalist small living room layout ideas that work with your space, not against it. Whether you're in a studio apartment in Chicago, a cozy rental in Austin, or a compact home in the suburbs, these seven layout strategies will change how you see and use your living room.</p>
+            
+            <p>Let me dive in — no fluff, just real ideas you can use today.</p>
+        </header>
+
+        <div class="article-hero">
+            <img src="images/blog-room-setup-hero.png" alt="A perfectly styled minimalist small living room with neutral tones and open layout">
+        </div>
+
+        <nav class="toc">
+            <h2>📋 Table of Contents</h2>
+            <ul>
+                <li><a href="#layout-1">1. Float Your Furniture Away from the Walls</a></li>
+                <li><a href="#layout-2">2. Use a Single Statement Sofa + Nothing Else</a></li>
+                <li><a href="#layout-3">3. Go Vertical with Wall-Mounted Storage</a></li>
+                <li><a href="#layout-4">4. Define Zones with a Minimalist Area Rug</a></li>
+                <li><a href="#layout-5">5. Choose a Multi-Function Coffee Table</a></li>
+                <li><a href="#layout-6">6. Use a Compact TV Stand Instead of a Media Wall</a></li>
+                <li><a href="#layout-7">7. Embrace the "Less Furniture, More Light" Rule</a></li>
+                <li><a href="#pro-tips">Pro Tips for Designing</a></li>
+                <li><a href="#mistakes">Common Mistakes to Avoid</a></li>
+                <li><a href="#faqs">Frequently Asked Questions</a></li>
+            </ul>
+        </nav>
+
+        <section id="layout-1" class="layout-section">
+            <span class="subtitle">Layout Idea 01</span>
+            <h2>Float Your Furniture Away from the Walls</h2>
+            <p>Most people shove every piece of furniture against the walls thinking it creates more space in the middle. Here's the truth: it actually makes the room feel smaller. When furniture lines all four walls, the room looks like an empty waiting room — not a cozy living space.</p>
+            
+            <div class="box-highlight">
+                <h4>✅ WHY IT WORKS FOR SMALL SPACES</h4>
+                <p>Floating furniture creates visual breathing room. It makes the room feel intentional and designed, and it creates a natural focal point in the center. Even pulling your sofa just 6–8 inches from the wall makes a huge difference.</p>
+            </div>
+
+            <h3>Step-by-Step Setup Tips:</h3>
+            <ul class="step-list">
+                <li>Pull your sofa 6–10 inches away from the back wall.</li>
+                <li>Angle chairs slightly inward toward the sofa to create conversation flow.</li>
+                <li>Leave at least 18 inches of walkway between furniture pieces.</li>
+                <li>Use a thin console table behind the sofa if you need storage behind it.</li>
+                <li>Keep the space between furniture and walls clear — no piles, no clutter.</li>
+            </ul>
+
+            <img src="images/lv-sofa-art.webp" alt="Modern sofa floating away from the wall in a minimalist living room">
+
+            <p style="font-style: italic;">Where to Place: Slide a <strong><a href="https://amzn.to/4mmrChB" target="_blank" rel="noopener noreferrer" class="affiliate-link-text">narrow sofa console table for small spaces</a></strong> directly behind the floating sofa to fill that gap and add a shelf for plants, books, or a small lamp.</p>
+        </section>
+
+        <section id="layout-2" class="layout-section">
+            <span class="subtitle">Layout Idea 02</span>
+            <h2>Use a Single Statement Sofa + Nothing Else</h2>
+            <p>In small living room design, one great piece beats five mediocre pieces every time. Instead of a sofa + loveseat + two chairs (which overwhelms a small space), try building the entire room around one well-chosen sofa — and let it breathe.</p>
+            <p>Think of it this way: a beautiful, well-proportioned sofa is like a centerpiece painting. Everything else in the room should support it, not compete with it.</p>
+            
+            <div class="box-highlight">
+                <h4>✅ WHY IT WORKS FOR SMALL SPACES</h4>
+                <p>One key seating piece with open floor space around it creates the illusion of a much larger room. It also reduces visual clutter — a core principle of minimalist living room decor.</p>
+            </div>
+
+            <ul class="step-list">
+                <li>Choose a sofa in a neutral color: light gray, beige, cream, or taupe.</li>
+                <li>Measure your space first — look for sofas under 84" for most small rooms.</li>
+                <li>Add 1–2 accent pillows in a complementary tone. That's it.</li>
+                <li>Skip the loveseat. Use a single accent chair if extra seating is needed.</li>
+                <li>Make sure sofa legs are visible — raised legs make rooms feel taller and airier.</li>
+            </ul>
+
+            <p style="font-style: italic;">Recommended: Center your room with a <strong><a href="https://amzn.to/3Q2WJmc" target="_blank" rel="noopener noreferrer" class="affiliate-link-text">Small Space Sofa with Solid Wood Legs (Under 84")</a></strong>. Floating it away from the wall and choosing raised legs keeps the room feeling light and airy.</p>
+        </section>
+
+        <section id="layout-3" class="layout-section">
+            <span class="subtitle">Layout Idea 03</span>
+            <h2>Go Vertical with Wall-Mounted Storage</h2>
+            <p>Floor space is precious in a small living room. So the smartest thing you can do? Stop storing things on the floor and start using your walls.</p>
+            <p>Wall-mounted shelves are one of the most powerful tools in small apartment living room design. They give you storage and display space without eating up a single square foot of floor area.</p>
+            
+            <div class="box-highlight">
+                <h4>✅ WHY IT WORKS FOR SMALL SPACES</h4>
+                <p>Vertical storage draws the eye upward, making ceilings feel higher and rooms feel taller. It also keeps floors clear, which is the #1 trick to making a small room feel bigger.</p>
+            </div>
+
+            <ul class="step-list">
+                <li>Mount 2–3 floating shelves above your sofa or TV area.</li>
+                <li>Keep shelf decor minimal: 1 plant, 1–2 books, 1 small vase. That's it.</li>
+                <li>Use shelves in a light wood tone or white to keep things airy.</li>
+                <li>Stagger shelf heights for a more dynamic, intentional look.</li>
+                <li>Avoid heavy, thick shelves — thin floating designs look more modern.</li>
+            </ul>
+
+            <p style="font-style: italic;">Pro Tip: A <strong><a href="https://amzn.to/4vbHAz5" target="_blank" rel="noopener noreferrer" class="affiliate-link-text">Floating Wall-Mounted Shelves Set (Set of 3, Wood)</a></strong> above the sofa (leave a 12" gap) adds visual height and removes the need for bulky bookcases.</p>
+        </section>
+
+        <section id="layout-4" class="layout-section">
+            <span class="subtitle">Layout Idea 04</span>
+            <h2>Define Zones with a Minimalist Area Rug</h2>
+            <p>A rug doesn't just add style — it defines your living room's boundaries. In an open floor plan or studio apartment, a rug is what tells the eye "this is the living area." Without it, the space feels undefined and messy.</p>
+            
+            <div class="box-highlight">
+                <h4>✅ WHY IT WORKS FOR SMALL SPACES</h4>
+                <p>The right rug anchors all your furniture visually. It creates a "room within a room" effect, making even a studio feel organized. A neutral-toned rug in the right size also reflects light and keeps the space from feeling closed in.</p>
+            </div>
+
+            <ul class="step-list">
+                <li>For a small living room, use a 5x8 or 6x9 rug — not smaller.</li>
+                <li>Make sure at least the front legs of the sofa and chairs sit on the rug.</li>
+                <li>Choose light neutral tones: ivory, warm beige, soft gray, or natural jute.</li>
+                <li>Avoid high-pile rugs in small spaces — low pile or flat-weave keeps it clean.</li>
+                <li>Center the rug under the coffee table, not pushed to one wall.</li>
+            </ul>
+
+            <img src="images/placeholder-living_room.webp" alt="Neutral minimalist area rug defining a small living room space">
+
+            <p style="font-style: italic;">Anchoring the space: Use a <strong><a href="https://amzn.to/4cgoWh4" target="_blank" rel="noopener noreferrer" class="affiliate-link-text">Neutral Color Minimalist Area Rug 5x8 (Low Pile)</a></strong> to unify your seating area and protect your floors without adding bulk.</p>
+        </section>
+
+        <section id="layout-5" class="layout-section">
+            <span class="subtitle">Layout Idea 05</span>
+            <h2>Choose a Multi-Function Coffee Table</h2>
+            <p>In a minimalist small living room, every piece of furniture needs to justify its footprint. A standard coffee table takes up valuable floor space — but a multi-function one earns its place by doing double or triple duty.</p>
+            
+            <div class="box-highlight">
+                <h4>✅ WHY IT WORKS FOR SMALL SPACES</h4>
+                <p>Multi-function furniture reduces the total number of pieces you need. Fewer pieces = less clutter = a calmer, more open-feeling room. It's the core of smart small space living.</p>
+            </div>
+
+            <ul class="step-list">
+                <li>Measure your sofa-to-wall distance — the coffee table should be 12–18" from the sofa.</li>
+                <li>If eating or working regularly, choose a lift-top style.</li>
+                <li>For extra seating, an <strong><a href="https://amzn.to/4bS6JHz" target="_blank" rel="noopener noreferrer" class="affiliate-link-text">upholstered storage ottoman</a></strong> works as a table, seat, and storage.</li>
+                <li>Keep the surface clear except for 1–2 decorative items.</li>
+            </ul>
+
+            <img src="images/lv-coffee-table.webp" alt="Minimalist coffee table with clean lines and functional design">
+
+            <p style="font-style: italic;">Smart Pick: A <strong><a href="https://amzn.to/47ImIpd" target="_blank" rel="noopener noreferrer" class="affiliate-link-text">Lift-Top Coffee Table with Hidden Storage</a></strong> lets it work as a laptop desk or dining table while hiding clutter away.</p>
+        </section>
+
+        <section id="layout-6" class="layout-section">
+            <span class="subtitle">Layout Idea 06</span>
+            <h2>Use a Compact TV Stand Instead of a Media Wall</h2>
+            <p>Big, hulking entertainment centers are the enemy of small living room design. A media wall that goes floor-to-ceiling will dominate a small room and make it feel like a storage unit.</p>
+            
+            <div class="box-highlight">
+                <h4>✅ WHY IT WORKS FOR SMALL SPACES</h4>
+                <p>A low TV stand keeps sightlines open, making the room feel wider. It also limits accumulated media clutter—which in itself is a form of minimalist discipline.</p>
+            </div>
+
+            <ul class="step-list">
+                <li>Choose a TV stand no wider than your TV + 6 inches on each side.</li>
+                <li>Look for stands with closed cabinet doors to hide cable boxes and remotes.</li>
+                <li>Keep the top clear — no stacked devices or decorative pileups.</li>
+                <li>Use a TV stand with legs, not one that sits on the floor.</li>
+            </ul>
+
+            <p style="font-style: italic;">Recommended: A <strong><a href="https://amzn.to/3Obd3ka" target="_blank" rel="noopener noreferrer" class="affiliate-link-text">Low-Profile Wood TV Stand with Cabinet Storage</a></strong> against the focal wall keeps the media area tight and intentional.</p>
+        </section>
+
+        <section id="layout-7" class="layout-section">
+            <span class="subtitle">Layout Idea 07</span>
+            <h2>Embrace the "Less Furniture, More Light" Rule</h2>
+            <p>Natural light is the single best tool for making a small space feel twice its size. If you're blocking your windows with heavy drapes or large furniture, you're working against yourself.</p>
+            
+            <div class="box-highlight">
+                <h4>✅ WHY IT WORKS FOR SMALL SPACES</h4>
+                <p>Light visually expands space. A well-lit living room will always feel larger than a dark, furniture-heavy one. Mirrors amplify this effect even further.</p>
+            </div>
+
+            <ul class="step-list">
+                <li>Replace heavy blackout curtains with sheer white or linen panels.</li>
+                <li>Place a large mirror opposite a window to double the natural light.</li>
+                <li>Use floor lamps like an <strong><a href="https://amzn.to/41jPxof" target="_blank" rel="noopener noreferrer" class="affiliate-link-text">Arc Floor Lamp</a></strong> for warm layered lighting.</li>
+                <li>Keep windowsills completely clear to maximize the view out.</li>
+            </ul>
+
+            <img src="images/hero-modern-living-room.webp" alt="Bright minimalist living room with large windows and light reflecting mirror">
+
+            <p style="font-style: italic;">The Visual Illusion: A <strong><a href="https://amzn.to/41icwA5" target="_blank" rel="noopener noreferrer" class="affiliate-link-text">Large Round Wall Mirror</a></strong> directly across from your main window doubles the light and creates a sense of depth.</p>
+        </section>
+
+        <hr style="border: 0; border-top: 1px solid var(--color-border); margin: var(--spacing-xl) 0;">
+
+        <section id="pro-tips" class="layout-section">
+            <h2 class="text-center">Pro Tips for Designing a Minimalist Small Living Room</h2>
+            <div class="pro-tips-grid">
+                <div class="tip-card">
+                    <h4>Stick to 3 colors max</h4>
+                    <p>Choose one dominant neutral, one secondary neutral, and one soft accent. More colors = more visual clutter.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>Use furniture with legs</h4>
+                    <p>Tables and sofas that show their legs allow light to pass underneath, making the room feel airier.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>Edit ruthlessly</h4>
+                    <p>Every few weeks, ask yourself what you'd remove. Minimalism is an ongoing practice.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>Go taller, not wider</h4>
+                    <p>When shopping for storage, choose taller bookcases over wide ones to use vertical space.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>Keep the floor clear</h4>
+                    <p>The more floor you can see, the bigger the room feels. Floor clutter is the #1 enemy.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>Foldable Items</h4>
+                    <p>Use <strong><a href="https://amzn.to/41jPxof" target="_blank" rel="noopener noreferrer" class="affiliate-link-text">foldable furniture for small spaces</a></strong> that can disappear when not needed.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="mistakes" class="layout-section">
+            <h2 class="text-center">Common Mistakes to Avoid</h2>
+            <div class="mistakes-grid">
+                <div class="mistake-card" style="border-top: 4px solid #cc0000;">
+                    <h4>✕ Buying furniture that's too big</h4>
+                    <p>Always measure first. A sofa that's 6 inches too wide can ruin the entire layout flow.</p>
+                </div>
+                <div class="mistake-card" style="border-top: 4px solid #cc0000;">
+                    <h4>✕ Using too many patterns</h4>
+                    <p>In a small room, busy patterns on rugs and curtains create visual chaos. Stick to solids.</p>
+                </div>
+                <div class="mistake-card" style="border-top: 4px solid #cc0000;">
+                    <h4>✕ Ignoring vertical space</h4>
+                    <p>Most people forget to use shelves or high-hung curtains to draw the eye up.</p>
+                </div>
+                <div class="mistake-card" style="border-top: 4px solid #cc0000;">
+                    <h4>✕ Rug that's too small</h4>
+                    <p>A tiny rug looks like a bath mat. Size up to at least 5x8 to anchor the entire space.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="faqs" class="faq-section">
+            <h2 class="text-center">Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h4>What is the best layout for a very small living room?</h4>
+                <p>The best layout is to float one sofa away from the wall, use wall-mounted shelves, and leave as much open floor space as possible. Focus on quality over quantity.</p>
+            </div>
+            <div class="faq-item">
+                <h4>How do I make a small living room look bigger?</h4>
+                <p>Use light neutrals, keep floors clear, hang curtains high, and use large mirrors opposite windows to reflect light and create depth.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Is minimalist design good for small spaces?</h4>
+                <p>Absolutely. Minimalism Combats limited square footage by reducing the count of items and focusing on functionality and light.</p>
+            </div>
+            <div class="faq-item">
+                <h4>What colors work best?</h4>
+                <p>Warm neutrals like soft white, beige, ivory, and light taupe are ideal. They reflect light and create a calm atmosphere.</p>
+            </div>
+        </section>
+
+        <!-- Final Newsletter/CTA -->
+        <section class="newsletter-section section-padding" style="background-color: var(--color-placeholder-bg); border-radius: var(--radius-md); margin-bottom: var(--spacing-lg);">
+            <div class="container text-center">
+                <h2>Join The Sanctuary</h2>
+                <p style="max-width: 600px; margin: 0 auto; line-height: 1.6; color: var(--color-text-light);">Get exclusive aesthetic styling tips, new curated luxury product lists, and minimalist philosophy essays delivered to your inbox.</p>
+                <form class="newsletter-form" action="#" method="POST">
+                    <input type="email" placeholder="Your aesthetic email address..." required aria-label="Email Address">
+                    <button type="submit" class="cta-button">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-col about-col">
+                    <h3>Chic Living Spaces</h3>
+                    <p>Curating elegant, minimal, and modern aesthetics for the everyday home. A sanctuary of interior design inspiration.</p>
+                </div>
+                <div class="footer-col links-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col social-col">
+                    <h3>Follow Us</h3>
+                    <a href="https://www.pinterest.com/chiclivingspaces09/" target="_blank" rel="noopener noreferrer" class="social-link pinterest" aria-label="Pinterest">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                            <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.951-7.252 4.105 0 7.356 2.95 7.356 6.88 0 4.104-2.585 7.424-6.177 7.424-1.206 0-2.342-.627-2.73-1.371l-.746 2.842c-.269 1.022-1 2.302-1.492 3.084 1.155.352 2.383.541 3.652.541 6.62 0 11.984-5.367 11.984-11.987C24.004 5.367 18.637 0 12.017 0z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="affiliate-disclosure">
+                <p>Amazon Affiliate Disclosure: As an Amazon Associate, Chic Living Spaces earns from qualifying purchases. This means if you click on an affiliate link and make a purchase, we may receive a small commission at no extra cost to you.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Chic Living Spaces. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Adjust smooth scroll for TOC
+        document.querySelectorAll('.toc a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
