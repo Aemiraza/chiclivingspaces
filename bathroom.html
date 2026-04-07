@@ -21,6 +21,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
+
+    <link rel="canonical" href="https://chiclivingspaces.com/bathroom.html">
 </head>
 <body>
 
@@ -36,10 +38,16 @@
                 <nav class="main-navigation">
                     <ul class="nav-links">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="living-room.html">Living Room</a></li>
-                        <li><a href="bedroom.html">Bedroom</a></li>
-                        <li><a href="kitchen.html">Kitchen</a></li>
                         <li><a href="blog.html">Blog</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle">Shop by Category <span class="dropdown-arrow">&#9662;</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="living-room.html">Living Room</a></li>
+                                <li><a href="bedroom.html">Bedroom</a></li>
+                                <li><a href="kitchen.html">Kitchen</a></li>
+                                <li><a href="bathroom.html">Bathroom</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
                 <div class="search-wrapper">
@@ -73,39 +81,129 @@
             </div>
         </section>
 
-        <!-- Product Grid Section - Bathroom has 2 images currently -->
+        <!-- Product Grid Section -->
         <section class="product-grid-section container section-padding" style="padding-top: 0;">
-            <div class="product-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+            <div class="product-grid">
                 
                 <!-- Product 1 -->
                 <article class="product-card">
                     <div class="product-img-wrapper">
-                         <img src="images/bt-tub.webp" alt="Organic Cotton Waffle Weave Bath Towels" class="product-image" fetchpriority="high" loading="eager" decoding="async">
+                         <img src="images/bt-bath-mat.jpg" alt="Bamboo Bath Mat" class="product-image" fetchpriority="high" loading="eager" decoding="async">
                     </div>
                     <div class="product-info">
-                        <h3>Organic Waffle Weave Towels</h3>
-                        <p class="product-desc">Fast-drying, lightweight, and deeply textured organic cotton for an authentic spa feel.</p>
-                        <a href="#" class="shop-btn">View Details &rarr;</a>
+                        <h3>Bamboo Bath Mat</h3>
+                        <p class="product-desc">Step out of the tub onto warming natural wood. This elegant, water-resistant bamboo mat instantly creates a high-end spa aesthetic.</p>
+                        <a href="https://amzn.to/47P9QNX" target="_blank" rel="noopener noreferrer" class="shop-btn">View on Amazon &rarr;</a>
                     </div>
                 </article>
 
                 <!-- Product 2 -->
                 <article class="product-card">
                     <div class="product-img-wrapper">
-                         <img src="images/bt-vanity.webp" alt="Minimalist Bamboo Bathtub Caddy Tray" class="product-image" loading="lazy" decoding="async">
+                         <img src="images/bt-apothecary-jars.jpg" alt="Apothecary Glass Jars" class="product-image" loading="lazy" decoding="async">
                     </div>
                     <div class="product-info">
-                        <h3>Bamboo Bathtub Caddy Tray</h3>
-                        <p class="product-desc">Elevate your evening soak with natural bamboo tones stretching across crisp white tubs.</p>
-                        <a href="#" class="shop-btn">View Details &rarr;</a>
+                        <h3>Apothecary Glass Jars</h3>
+                        <p class="product-desc">Store cotton swabs, pads, and bath salts beautifully. Clear glass and sleek lids keep your vanity organized and visually calm.</p>
+                        <a href="https://amzn.to/48rKkyr" target="_blank" rel="noopener noreferrer" class="shop-btn">View on Amazon &rarr;</a>
                     </div>
                 </article>
 
-                <!-- Products 3-10: Placeholder removed -->
-                <div class="no-more-products" style="grid-column: 1 / -1; text-align: center; padding: var(--spacing-lg) 0; border-top: 1px solid var(--color-border); margin-top: var(--spacing-lg);">
-                    <h3 style="font-family: var(--font-secondary); margin-bottom: var(--spacing-sm);">Collection Growing Soon</h3>
-                    <p style="font-style: italic; color: var(--color-text-light);">We are meticulously curating more minimalist essentials for your haven...</p>
-                </div>
+                <!-- Product 3 -->
+                <article class="product-card">
+                    <div class="product-img-wrapper">
+                         <img src="images/bt-waffle-towels.jpg" alt="Waffle Weave Bath Towels" class="product-image" loading="lazy" decoding="async">
+                    </div>
+                    <div class="product-info">
+                        <h3>Waffle Weave Bath Towels</h3>
+                        <p class="product-desc">Fast-drying, lightweight, and deeply textured organic cotton for an authentic luxurious spa feel everyday.</p>
+                        <a href="https://amzn.to/47GZ8cs" target="_blank" rel="noopener noreferrer" class="shop-btn">View on Amazon &rarr;</a>
+                    </div>
+                </article>
+                
+                <!-- Product 4 -->
+                <article class="product-card">
+                    <div class="product-img-wrapper">
+                         <img src="images/bt-shower-caddy.jpg" alt="Matte Black Shower Caddy" class="product-image" loading="lazy" decoding="async">
+                    </div>
+                    <div class="product-info">
+                        <h3>Matte Black Shower Caddy</h3>
+                        <p class="product-desc">Ditch the rust with a striking matte black finish. Elevate your shower space with sharp lines and effortless organization.</p>
+                        <a href="https://amzn.to/4e3066E" target="_blank" rel="noopener noreferrer" class="shop-btn">View on Amazon &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Product 5 -->
+                <article class="product-card">
+                    <div class="product-img-wrapper">
+                         <img src="images/bt-wall-mirror.jpg" alt="Round Wall Mirror" class="product-image" loading="lazy" decoding="async">
+                    </div>
+                    <div class="product-info">
+                        <h3>Round Wall Mirror</h3>
+                        <p class="product-desc">Soften hard architectural lines in your bathroom with a simple, frameless or thinly framed modern round mirror.</p>
+                        <a href="https://amzn.to/4t3M75o" target="_blank" rel="noopener noreferrer" class="shop-btn">View on Amazon &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Product 6 -->
+                <article class="product-card">
+                    <div class="product-img-wrapper">
+                         <img src="images/bt-shower-curtain.jpg" alt="Minimalist Shower Curtain" class="product-image" loading="lazy" decoding="async">
+                    </div>
+                    <div class="product-info">
+                        <h3>Minimalist Shower Curtain</h3>
+                        <p class="product-desc">An immaculately clean, textured white shower fabric. Keeps the room feeling airy, expansive, and utterly pristine.</p>
+                        <a href="https://amzn.to/4c8X3Ht" target="_blank" rel="noopener noreferrer" class="shop-btn">View on Amazon &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Product 7 -->
+                <article class="product-card">
+                    <div class="product-img-wrapper">
+                         <img src="images/bt-toilet-storage.jpg" alt="Bamboo Over-the-Toilet Storage" class="product-image" loading="lazy" decoding="async">
+                    </div>
+                    <div class="product-info">
+                        <h3>Bamboo Over-the-Toilet Storage</h3>
+                        <p class="product-desc">Maximize your vertical space effortlessly. Natural bamboo shelving adds warmth while hiding unsightly bathroom essentials.</p>
+                        <a href="https://amzn.to/4tsqefz" target="_blank" rel="noopener noreferrer" class="shop-btn">View on Amazon &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Product 8 -->
+                <article class="product-card">
+                    <div class="product-img-wrapper">
+                         <img src="images/bt-towel-rack.jpg" alt="Freestanding Towel Rack" class="product-image" loading="lazy" decoding="async">
+                    </div>
+                    <div class="product-info">
+                        <h3>Freestanding Towel Rack</h3>
+                        <p class="product-desc">A sculptural metal piece to dry your towels elegantly. No drilling required, maintaining your pristine tiled walls.</p>
+                        <a href="https://amzn.to/4tw40JJ" target="_blank" rel="noopener noreferrer" class="shop-btn">View on Amazon &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Product 9 -->
+                <article class="product-card">
+                    <div class="product-img-wrapper">
+                         <img src="images/bt-bathtub-tray.jpg" alt="Bamboo Bathtub Tray" class="product-image" loading="lazy" decoding="async">
+                    </div>
+                    <div class="product-info">
+                        <h3>Bamboo Bathtub Tray</h3>
+                        <p class="product-desc">Elevate your evening soak with natural bamboo tones stretching gracefully across crisp white tub porcelain.</p>
+                        <a href="https://amzn.to/47NRRHJ" target="_blank" rel="noopener noreferrer" class="shop-btn">View on Amazon &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Product 10 -->
+                <article class="product-card">
+                    <div class="product-img-wrapper">
+                         <img src="images/bt-foaming-dispenser.jpg" alt="Automatic Foaming Soap Dispenser" class="product-image" loading="lazy" decoding="async">
+                    </div>
+                    <div class="product-info">
+                        <h3>Automatic Foaming Soap Dispenser</h3>
+                        <p class="product-desc">Zero touch, zero mess. A high-tech, aesthetically pleasing addition that upgrades your hygiene routine.</p>
+                        <a href="https://amzn.to/4bTbJvy" target="_blank" rel="noopener noreferrer" class="shop-btn">View on Amazon &rarr;</a>
+                    </div>
+                </article>
 
             </div>
         </section>
