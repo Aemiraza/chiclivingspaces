@@ -31,7 +31,7 @@
         <div class="container header-container">
             <div class="site-branding">
                 <a href="#" class="site-title">
-                    <img src="logo.webp" alt="Chic Living Spaces Logo" width="150" height="auto" class="site-logo" loading="lazy" decoding="async">
+                    <img src="logo.webp" alt="Chic Living Spaces Logo" width="150" height="auto" class="site-logo" fetchpriority="high" loading="eager" decoding="async">
                 </a>
             </div>
             <div class="header-actions">
@@ -83,7 +83,7 @@
                 <div class="hero-image-wrapper">
                     <picture>
                         <!-- Ensure maximum speed with WebP and eager loading since it's LCP -->
-                        <img src="images/hero-modern-living-room.webp" alt="Chic Modern Minimalist Living Room Interior" class="hero-image" fetchpriority="high" loading="eager" decoding="async">
+                        <img src="images/hero-modern-living-room.webp" alt="Chic Modern Minimalist Living Room Interior" class="hero-image" width="1000" height="1000" fetchpriority="high" loading="eager" decoding="async">
                     </picture>
                 </div>
             </div>
@@ -96,28 +96,28 @@
                 <div class="category-grid">
                     <a href="living-room.html" class="category-card">
                         <div class="category-img-wrapper">
-                            <img src="images/living-room-category.webp" alt="Minimalist Modern Living Room Decor" class="category-image-placeholder" loading="lazy" decoding="async">
+                            <img src="images/living-room-category.webp" alt="Minimalist Modern Living Room Decor" class="category-image-placeholder" width="600" height="750" loading="lazy" decoding="async">
                         </div>
                         <h3>Living Room</h3>
                         <span class="shop-link">Shop Now &rarr;</span>
                     </a>
                     <a href="bedroom.html" class="category-card">
                         <div class="category-img-wrapper">
-                            <img src="images/bedroom-category.webp" alt="Chic Modern Bedroom Interior Design" class="category-image-placeholder" loading="lazy" decoding="async">
+                            <img src="images/bedroom-category.webp" alt="Chic Modern Bedroom Interior Design" class="category-image-placeholder" width="600" height="750" loading="lazy" decoding="async">
                         </div>
                         <h3>Bedroom</h3>
                         <span class="shop-link">Shop Now &rarr;</span>
                     </a>
                     <a href="kitchen.html" class="category-card">
                         <div class="category-img-wrapper">
-                            <img src="images/kitchen-category.webp" alt="Elegant White Minimalist Kitchen Core" class="category-image-placeholder" loading="lazy" decoding="async">
+                            <img src="images/kitchen-category.webp" alt="Elegant White Minimalist Kitchen Core" class="category-image-placeholder" width="600" height="750" loading="lazy" decoding="async">
                         </div>
                         <h3>Kitchen</h3>
                         <span class="shop-link">Shop Now &rarr;</span>
                     </a>
                     <a href="bathroom.html" class="category-card">
                         <div class="category-img-wrapper">
-                            <img src="images/bathroom-category.webp" alt="Luxury Spa Aesthetic Bathroom Decor" class="category-image-placeholder" loading="lazy" decoding="async">
+                            <img src="images/bathroom-category.webp" alt="Luxury Spa Aesthetic Bathroom Decor" class="category-image-placeholder" width="600" height="750" loading="lazy" decoding="async">
                         </div>
                         <h3>Bathroom</h3>
                         <span class="shop-link">Shop Now &rarr;</span>
@@ -134,7 +134,7 @@
                     <article class="article-card">
                         <a href="7-minimalist-small-living-room-layouts.html" style="display: block; color: inherit; text-decoration: none;">
                             <div class="blog-img-wrapper" style="aspect-ratio: 2/3; margin-bottom: var(--spacing-sm); border-radius: var(--radius-md); overflow: hidden;">
-                                <img src="images/blog-room-setup-hero.png" alt="7 Minimalist Small Living Room Layout Ideas" style="width: 100%; height: 100%; object-fit: cover;">
+                                <img src="images/blog-room-setup-hero.png" alt="7 Minimalist Small Living Room Layout Ideas" style="width: 100%; height: 100%; object-fit: cover;" width="1024" height="1024" fetchpriority="high" loading="eager" decoding="async">
                             </div>
                             <div class="article-content">
                                 <h3>7 Minimalist Small Living Room Layout Ideas That Actually Work</h3>
@@ -186,6 +186,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>

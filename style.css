@@ -497,7 +497,7 @@ ul { list-style: none; }
 }
 
 .info-card {
-    background-color: #FAFAFA;
+    background-color: var(--color-placeholder-bg);
     padding: var(--spacing-lg) var(--spacing-md);
     border-radius: var(--radius-md);
     height: 100%;

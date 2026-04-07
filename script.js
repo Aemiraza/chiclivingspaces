@@ -122,4 +122,42 @@ document.addEventListener('DOMContentLoaded', () => {
             // Note: Navigation happens naturally since it's an <a> tag now
         });
     });
+
+    // Newsletter Form Interception 
+    const newsletterForms = document.querySelectorAll('.newsletter-form');
+    newsletterForms.forEach(form => {
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const input = form.querySelector('input[type="email"]');
+            const email = input ? input.value : 'friend';
+            
+            // Replace form content with success message
+            form.innerHTML = `
+                <div style="padding: 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: rgba(58, 63, 62, 0.05); animation: fadein 0.5s;">
+                    <h3 style="color: var(--color-accent); margin-bottom: 0.5rem;">Welcome to the Sanctuary!</h3>
+                    <p style="color: var(--color-text-light); margin: 0; font-size: 0.95rem;">Thank you for subscribing. We've added <strong>${email}</strong> to our VIP aesthetic list.</p>
+                </div>
+            `;
+        });
+    });
+
+    // Contact Form Interception
+    const contactForms = document.querySelectorAll('.contact-form');
+    contactForms.forEach(form => {
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const nameInput = form.querySelector('#fullName');
+            const name = nameInput ? nameInput.value : 'friend';
+            
+            form.innerHTML = `
+                <div style="padding: 2rem; text-align: center; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: rgba(58, 63, 62, 0.05); animation: fadein 0.5s;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="var(--color-accent)" style="margin-bottom: 1rem;">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <h3 style="color: var(--color-accent); margin-bottom: 0.5rem;">Message Sent!</h3>
+                    <p style="color: var(--color-text-light); margin: 0; font-size: 0.95rem;">Thank you, <strong>${name}</strong>. Your message has been received. Our team will get back to you shortly.</p>
+                </div>
+            `;
+        });
+    });
 });
