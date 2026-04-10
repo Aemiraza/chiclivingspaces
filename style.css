@@ -3,7 +3,8 @@
     --color-white: #FFFFFF;
     --color-text: #3E2C2C;
     --color-text-light: #5A5A5A;
-    --color-accent: #EEDCDA; /* Soft Blush Pink */
+    --color-accent: #EEDCDA; /* Soft Blush Pink (Backgrounds/Accents) */
+    --color-accent-dark: #8E5E5A; /* Deep Terracotta (Accessible Text/Borders) */
     --color-accent-hover: #DCC3C0;
     --color-border: #F0F0F0;
     --color-placeholder-bg: #F9F9F9;
@@ -145,6 +146,7 @@ ul { list-style: none; }
     display: inline-block;
 }
 .dropdown.active .dropdown-arrow { transform: rotate(180deg); }
+.dropdown-menu a:hover { color: var(--color-accent-dark); }
 
 .header-actions { display: flex; align-items: center; gap: var(--spacing-sm); }
 .search-wrapper { position: relative; display: flex; align-items: center; justify-content: center; }
@@ -348,11 +350,11 @@ ul { list-style: none; }
     text-transform: uppercase;
     font-size: 0.85rem;
     letter-spacing: 1px;
-    border-bottom: 2px solid var(--color-accent);
+    border-bottom: 2px solid var(--color-accent-dark);
     padding-bottom: 2px;
 }
 .read-more:hover {
-    color: var(--color-accent);
+    color: var(--color-accent-dark);
     border-color: var(--color-accent-hover);
 }
 
@@ -610,7 +612,7 @@ ul { list-style: none; }
     font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: var(--color-accent);
+    color: var(--color-accent-dark); /* Accessible contrast */
     font-weight: 600;
     margin-bottom: 10px;
     min-height: 1.2rem; /* Ensures height is reserved even if category is missing */
@@ -685,7 +687,7 @@ ul { list-style: none; }
     text-transform: uppercase;
     letter-spacing: 1px;
     color: var(--color-text);
-    border-bottom: 2px solid var(--color-accent);
+    border-bottom: 2px solid var(--color-accent-dark);
     padding-bottom: 2px;
     transition: var(--transition);
     margin-top: auto; /* Pushes to bottom */
