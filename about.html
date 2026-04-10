@@ -25,12 +25,29 @@
 
     <title>About Us | Chic Living Spaces</title>
     
-    <!-- Google Fonts -->
+    <!-- Google Fonts (Optimized) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"></noscript>
     
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Critical Above-the-Fold CSS */
+        :root { --color-white: #FFFFFF; --color-text: #3E2C2C; --color-text-light: #5A5A5A; --color-accent: #EEDCDA; --color-accent-dark: #8E5E5A; --color-border: #F0F0F0; --font-heading: 'Playfair Display', serif; --font-body: 'Montserrat', sans-serif; --spacing-sm: 1rem; --spacing-md: 2rem; --spacing-lg: 4rem; --radius-sm: 4px; --radius-md: 8px; --transition: all 0.3s ease; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: var(--color-white); color: var(--color-text); font-family: var(--font-body); line-height: 1.6; overflow-x: hidden; }
+        img { max-width: 100%; height: auto; display: block; }
+        h1 { font-family: var(--font-heading); color: var(--color-text); font-weight: 600; font-size: 2.5rem; line-height: 1.2; margin-bottom: var(--spacing-sm); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .sticky-header { position: sticky; top: 0; background-color: var(--color-white); z-index: 1000; box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05); padding: var(--spacing-sm) 0; }
+        .header-container { display: flex; justify-content: space-between; align-items: center; }
+        .site-logo { max-height: 50px; width: auto; object-fit: contain; mix-blend-mode: multiply; }
+    </style>
+    
+    <!-- Load Non-Critical CSS Asynchronously -->
+    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
 
     <link rel="canonical" href="https://chiclivingspaces.com/about.html">
 </head>

@@ -30,12 +30,31 @@
 
     <title>10 Smart Living Room Decor Ideas to Upgrade Your Space | Chic Living Spaces</title>
     
-    <!-- Google Fonts -->
+    <!-- Google Fonts (Optimized) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"></noscript>
     
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Critical Above-the-Fold CSS */
+        :root { --color-white: #FFFFFF; --color-text: #3E2C2C; --color-text-light: #5A5A5A; --color-accent: #EEDCDA; --color-accent-dark: #8E5E5A; --color-border: #F0F0F0; --font-heading: 'Playfair Display', serif; --font-body: 'Montserrat', sans-serif; --spacing-sm: 1rem; --spacing-md: 2rem; --spacing-lg: 4rem; --radius-sm: 4px; --radius-md: 8px; --transition: all 0.3s ease; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: var(--color-white); color: var(--color-text); font-family: var(--font-body); line-height: 1.6; overflow-x: hidden; }
+        img { max-width: 100%; height: auto; display: block; }
+        h1 { font-family: var(--font-heading); color: var(--color-text); font-weight: 600; font-size: 2.2rem; line-height: 1.2; margin-bottom: var(--spacing-sm); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .sticky-header { position: sticky; top: 0; background-color: var(--color-white); z-index: 1000; box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05); padding: var(--spacing-sm) 0; }
+        .header-container { display: flex; justify-content: space-between; align-items: center; }
+        .site-logo { max-height: 50px; width: auto; object-fit: contain; mix-blend-mode: multiply; }
+        .blog-post-hero { width: 100%; border-radius: 15px; overflow: hidden; margin-bottom: var(--spacing-lg); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .blog-hero-image { width: 100%; height: auto; display: block; }
+    </style>
+    
+    <!-- Load Non-Critical CSS Asynchronously -->
+    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
     <style>
         .article-container {
             max-width: 850px;
@@ -295,7 +314,7 @@
                 <li>Play with patterns: Let the top rug be your pop of color or intricate pattern.</li>
                 <li>Size matters: Make sure the front legs of your sofa and chairs rest comfortably on the rugs.</li>
             </ul>
-            <img src="images/blog-10-smart-rugs.png" alt="Layered rugs in a minimalist living room" width="1024" height="1024" loading="lazy" decoding="async">
+            <img src="images/blog-10-smart-rugs.webp" alt="Layered rugs in a minimalist living room" width="1024" height="1024" loading="lazy" decoding="async">
 
             <p style="font-style: italic;">🛒 Amazon Affiliate Picks:<br>
             Base Rug: <a href="https://amzn.to/3Ow2s3y" target="_blank" rel="noopener noreferrer" class="affiliate-link-text">Jute Area Rug</a><br>
@@ -318,7 +337,7 @@
                 <li>Warm bulbs only: Stick to LED bulbs between 2700K and 3000K for a warm, inviting glow.</li>
             </ul>
 
-            <img src="images/blog-10-smart-lighting.png" alt="Modern sculptural statement lighting" width="1024" height="1024" loading="lazy" decoding="async">
+            <img src="images/blog-10-smart-lighting.webp" alt="Modern sculptural statement lighting" width="1024" height="1024" loading="lazy" decoding="async">
 
             <p style="font-style: italic;">🛒 Amazon Affiliate Picks:<br>
             Ceiling Fixture: <a href="https://amzn.to/4czvo3M" target="_blank" rel="noopener noreferrer" class="affiliate-link-text">Mid Century Modern Sputnik Chandelier</a><br>
@@ -342,7 +361,7 @@
                 <li>Plan it out: Trace your frames onto newspaper, cut them out, and tape them to the wall with painter's tape to perfect the layout before hammering any nails.</li>
                 <li>Mix and match: Don't just use photos. Throw in a small mirror, a woven wall basket, or typography art for variety.</li>
             </ul>
-            <img src="images/blog-10-smart-gallery.png" alt="Curated minimalist gallery wall" width="1024" height="1024" loading="lazy" decoding="async">
+            <img src="images/blog-10-smart-gallery.webp" alt="Curated minimalist gallery wall" width="1024" height="1024" loading="lazy" decoding="async">
             <p><small>Internal Linking Suggestion: Check out our guide on <a href="blog-design-styles.html">modern minimalist aesthetics</a> for more inspiration.</small></p>
 
             <p style="font-style: italic;">🛒 Amazon Affiliate Picks:<br>
@@ -366,7 +385,7 @@
                 <li>Mix textures: Pair smooth leather or cotton with rich velvet, faux fur, or chunky knits to create deep cozy living room decor.</li>
             </ul>
 
-            <img src="images/blog-10-smart-textiles.png" alt="Textured cushions and throw on a neutral sofa" width="1024" height="1024" loading="lazy" decoding="async">
+            <img src="images/blog-10-smart-textiles.webp" alt="Textured cushions and throw on a neutral sofa" width="1024" height="1024" loading="lazy" decoding="async">
 
             <p style="font-style: italic;">🛒 Amazon Affiliate Picks:<br>
             Pillow Covers: <a href="https://amzn.to/4vkB5tJ" target="_blank" rel="noopener noreferrer" class="affiliate-link-text">Velvet Throw Pillow Covers 18x18</a><br>
@@ -388,7 +407,7 @@
                 <li>Strategic placement: Always be mindful of what the mirror is reflecting. Make sure it's reflecting light or a beautiful piece of art, not a cluttered corner.</li>
                 <li>Go oversized: A large leaning floor mirror makes a much grander statement than a tiny wall mirror.</li>
             </ul>
-            <img src="images/blog-10-smart-mirrors.png" alt="Elegantly arched floor mirror in a bright room" width="1024" height="1024" loading="lazy" decoding="async">
+            <img src="images/blog-10-smart-mirrors.webp" alt="Elegantly arched floor mirror in a bright room" width="1024" height="1024" loading="lazy" decoding="async">
 
             <p style="font-style: italic;">🛒 Amazon Affiliate Picks:<br>
             Floor Mirror: <a href="https://amzn.to/4czvBUC" target="_blank" rel="noopener noreferrer" class="affiliate-link-text">Oversized Arched Floor Mirror Full Length</a><br>
@@ -411,7 +430,7 @@
                 <li>Elevate your pots: Don't leave plants in their plastic nursery pots. Put them in ceramic planters, brass pots, or woven baskets.</li>
             </ul>
 
-            <img src="images/blog-10-smart-greenery.png" alt="Faux olive tree and indoor plants in a bright room" width="1024" height="1024" loading="lazy" decoding="async">
+            <img src="images/blog-10-smart-greenery.webp" alt="Faux olive tree and indoor plants in a bright room" width="1024" height="1024" loading="lazy" decoding="async">
 
             <p style="font-style: italic;">🛒 Amazon Affiliate Picks:<br>
             Faux Tree: <a href="https://amzn.to/4su4QWH" target="_blank" rel="noopener noreferrer" class="affiliate-link-text">Tall Faux Olive Tree Artificial Indoor</a><br>
@@ -433,7 +452,7 @@
                 <li>The Rule of Three: When grouping objects on shelves, arrange them in odd numbers (groups of three or five) as it is naturally more pleasing to the human eye.</li>
                 <li>Mix items: Don’t just line up books. Stack some horizontally, add a trailing plant, lean a small framed photo, and place a sculptural candle.</li>
             </ul>
-            <img src="images/blog-10-smart-shelves.png" alt="Minimalist white floating shelves setup" width="1024" height="1024" loading="lazy" decoding="async">
+            <img src="images/blog-10-smart-shelves.webp" alt="Minimalist white floating shelves setup" width="1024" height="1024" loading="lazy" decoding="async">
 
             <p style="font-style: italic;">🛒 Amazon Affiliate Picks:<br>
             Shelving: <a href="https://amzn.to/4sXDIQN" target="_blank" rel="noopener noreferrer" class="affiliate-link-text">Rustic Wood Floating Shelves Set of 3</a><br>
@@ -456,7 +475,7 @@
                 <li>Consider scale: If you have a small room, opt for a subtle texture (like faux grasscloth) or a larger, open pattern rather than a busy, tiny print that can feel chaotic.</li>
             </ul>
 
-            <img src="images/blog-10-smart-wallpaper.png" alt="Navy blue geometric accent wall" width="1024" height="1024" loading="lazy" decoding="async">
+            <img src="images/blog-10-smart-wallpaper.webp" alt="Navy blue geometric accent wall" width="1024" height="1024" loading="lazy" decoding="async">
 
             <p style="font-style: italic;">🛒 Amazon Affiliate Picks:<br>
             Wallpaper: <a href="https://amzn.to/48CaBtY" target="_blank" rel="noopener noreferrer" class="affiliate-link-text">Geometric Peel and Stick Wallpaper Modern</a><br>
@@ -478,7 +497,7 @@
                 <li>Measure first: Always measure the distance between the drill holes (the "center-to-center" measurement) on your existing furniture before buying new pulls.</li>
                 <li>Mix metals carefully: It’s okay to mix metals in a room (e.g., black lamp stands with brass cabinet pulls), but try to limit it to two distinct metal finishes to keep it cohesive.</li>
             </ul>
-            <img src="images/blog-10-smart-hardware.png" alt="Premium brushed brass furniture hardware" width="1024" height="1024" loading="lazy" decoding="async">
+            <img src="images/blog-10-smart-hardware.webp" alt="Premium brushed brass furniture hardware" width="1024" height="1024" loading="lazy" decoding="async">
 
             <p style="font-style: italic;">🛒 Amazon Affiliate Picks:<br>
             Cabinet Pulls: <a href="https://amzn.to/4tDASAb" target="_blank" rel="noopener noreferrer" class="affiliate-link-text">Brushed Brass Cabinet Pulls Handles</a><br>
@@ -501,7 +520,7 @@
                 <li>Use trays: If you buy an upholstered storage ottoman, purchase a beautiful wooden or metallic tray to sit on top so you have a hard, flat surface for coffee cups and decor.</li>
             </ul>
 
-            <img src="images/blog-10-smart-ottoman.png" alt="Emerald green velvet storage ottoman with a tray" width="1024" height="1024" loading="lazy" decoding="async">
+            <img src="images/blog-10-smart-ottoman.webp" alt="Emerald green velvet storage ottoman with a tray" width="1024" height="1024" loading="lazy" decoding="async">
 
             <p style="font-style: italic;">🛒 Amazon Affiliate Picks:<br>
             Storage Ottoman: <a href="https://amzn.to/47RfUpl" target="_blank" rel="noopener noreferrer" class="affiliate-link-text">Round Velvet Storage Ottoman with Lid</a><br>
