@@ -22,7 +22,7 @@
     --radius-sm: 4px;
     --radius-md: 8px;
     
-    --transition: all 0.3s ease;
+    --transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 
@@ -259,7 +259,8 @@ ul { list-style: none; }
 .hero-image-wrapper {
     width: 100%;
     max-width: 100%;
-    height: auto;
+    aspect-ratio: 1 / 1; /* Reserved space on mobile */
+    background-color: var(--color-placeholder-bg);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* subtle shadow for elegance */
@@ -282,7 +283,10 @@ ul { list-style: none; }
     }
     .hero-content h1 { font-size: 4rem; line-height: 1.1; margin-bottom: var(--spacing-md); }
     .hero-content p { font-size: 1.1rem; max-width: 90%; }
-    .hero-image-wrapper { height: 600px; }
+    .hero-image-wrapper { 
+        aspect-ratio: auto; 
+        height: 600px; 
+    }
 }
 
 /* Categories Section Base (Mobile) */
