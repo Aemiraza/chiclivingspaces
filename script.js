@@ -147,15 +147,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const input = form.querySelector('input[type="email"]');
             const email = input ? input.value : 'friend';
             
-            // Replace form content with success message using a fragment to minimize reflows
-            const successMsg = document.createElement('div');
-            successMsg.style.cssText = "padding: 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: rgba(58, 63, 62, 0.05); animation: fadein 0.5s;";
-            successMsg.innerHTML = `
-                <h3 style="color: var(--color-accent); margin-bottom: 0.5rem;">Welcome to the Sanctuary!</h3>
-                <p style="color: var(--color-text-light); margin: 0; font-size: 0.95rem;">Thank you for subscribing. We've added <strong>${email}</strong> to our VIP aesthetic list.</p>
+            // Replace form content with success message
+            form.innerHTML = `
+                <div style="padding: 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: rgba(58, 63, 62, 0.05); animation: fadein 0.5s;">
+                    <h3 style="color: var(--color-accent); margin-bottom: 0.5rem;">Welcome to the Sanctuary!</h3>
+                    <p style="color: var(--color-text-light); margin: 0; font-size: 0.95rem;">Thank you for subscribing. We've added <strong>${email}</strong> to our VIP aesthetic list.</p>
+                </div>
             `;
-            form.innerHTML = '';
-            form.appendChild(successMsg);
         });
     });
 
