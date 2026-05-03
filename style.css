@@ -60,8 +60,8 @@ ul { list-style: none; }
     display: inline-block;
     background-color: var(--color-accent);
     color: var(--color-text);
-    padding: 1rem 2rem;
-    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -76,6 +76,13 @@ ul { list-style: none; }
     color: var(--color-white);
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(62, 44, 44, 0.2);
+}
+
+@media (min-width: 768px) {
+    .cta-button {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
 }
 
 /* Header */
