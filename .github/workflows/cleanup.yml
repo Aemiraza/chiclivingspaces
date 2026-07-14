@@ -1,0 +1,29 @@
+name: Auto Delete Useless Images
+on:
+  push:
+    paths:
+      - '.github/workflows/cleanup.yml'
+
+jobs:
+  delete-files:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Safely Delete Only Old PNG and JPG images
+        run: |
+          # Yeh sirf aur sirf purani .png aur .jpg tasveerein delete karega
+          # Aapki nayi .webp tasveerein aur baqi HTML/CSS files bilkul mehfooz rahengi
+          rm -f images/*.png
+          rm -f images/*.jpg
+
+      - name: Save Changes (Commit & Push)
+        run: |
+          git config --global user.name "GitHub Action Bot"
+          git config --global user.email "bot@github.com"
+          git add -A
+          git commit -m "Auto-deleted useless old PNG and JPG files from images folder" || echo "No files to delete"
+          git push
