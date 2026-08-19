@@ -176,13 +176,4 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
         });
     });
-    // Pinterest Hover Button (Pin It) Global Injection
-    const pinterestScript = document.createElement('script');
-    pinterestScript.setAttribute('async', '');
-    pinterestScript.setAttribute('defer', '');
-    pinterestScript.setAttribute('data-pin-hover', 'true');
-    pinterestScript.setAttribute('data-pin-tall', 'true');
-    pinterestScript.setAttribute('src', '//assets.pinterest.com/js/pinit.js');
-    document.head.appendChild(pinterestScript);
-
 });
