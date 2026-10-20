@@ -2,6 +2,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.querySelector('.menu-toggle');
     const mainNav = document.querySelector('.main-navigation');
 
+    // Sticky Header Scroll Effect
+    const stickyHeader = document.querySelector('.sticky-header');
+    if (stickyHeader) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                stickyHeader.classList.add('scrolled');
+            } else {
+                stickyHeader.classList.remove('scrolled');
+            }
+        }, { passive: true });
+    }
+
     if(menuToggle && mainNav) {
         menuToggle.addEventListener('click', () => {
             mainNav.classList.toggle('active');
