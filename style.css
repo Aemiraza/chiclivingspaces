@@ -1034,3 +1034,121 @@ ul { list-style: none; }
         color: var(--color-text) !important;
     }
 }
+
+/* ==========================================================================
+   Author Bio Box & Editorial Standards (E-E-A-T)
+   ========================================================================== */
+.author-bio-card {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    background-color: var(--color-placeholder-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 28px;
+    margin: var(--spacing-xl) 0 var(--spacing-lg) 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+.author-bio-avatar {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 3px solid var(--color-accent);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.author-bio-content {
+    flex: 1;
+}
+
+.author-bio-badge {
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: var(--color-text);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-bottom: 6px;
+}
+
+.author-bio-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 2px;
+}
+
+.author-bio-role {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.author-bio-desc {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: var(--color-text-light);
+    margin-bottom: 0;
+}
+
+@media (max-width: 650px) {
+    .author-bio-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    .author-bio-avatar {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* Editorial Trust Grid (About Page) */
+.editorial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    margin-top: var(--spacing-lg);
+}
+
+.editorial-card {
+    background: var(--color-placeholder-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 28px;
+    transition: var(--transition);
+}
+
+.editorial-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.06);
+    border-color: var(--color-accent);
+}
+
+.editorial-card-icon {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.editorial-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+    color: var(--color-text);
+}
+
+.editorial-card p {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: var(--color-text-light);
+    margin-bottom: 0;
+}
+
