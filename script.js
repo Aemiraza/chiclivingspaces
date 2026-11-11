@@ -14,13 +14,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }, { passive: true });
     }
 
-    if(menuToggle && mainNav) {
+    if (menuToggle && mainNav) {
         menuToggle.addEventListener('click', () => {
             mainNav.classList.toggle('active');
-            
+
             // Toggle hamburger animation
             const bars = menuToggle.querySelectorAll('.bar');
-            if(mainNav.classList.contains('active')) {
+            if (mainNav.classList.contains('active')) {
                 bars[0].style.transform = 'rotate(-45deg) translate(-5px, 5px)';
                 bars[1].style.opacity = '0';
                 bars[2].style.transform = 'rotate(45deg) translate(-4px, -5px)';
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         anchor.addEventListener('click', function (e) {
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
-            
+
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 e.preventDefault();
@@ -61,9 +61,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     behavior: 'smooth',
                     block: 'start'
                 });
-                
+
                 // close menu on mobile after click
-                if(mainNav.classList.contains('active')) {
+                if (mainNav.classList.contains('active')) {
                     menuToggle.click();
                 }
             }
@@ -77,11 +77,11 @@ document.addEventListener('DOMContentLoaded', () => {
     searchBtns.forEach((btn, index) => {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
-            if(searchBars[index]) {
+            if (searchBars[index]) {
                 searchBars[index].classList.toggle('active');
-                if(searchBars[index].classList.contains('active')) {
+                if (searchBars[index].classList.contains('active')) {
                     const input = searchBars[index].querySelector('input');
-                    if(input) input.focus();
+                    if (input) input.focus();
                 }
             }
         });
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
     closeSearchBtns.forEach((btn, index) => {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
-            if(searchBars[index]) {
+            if (searchBars[index]) {
                 searchBars[index].classList.remove('active');
             }
         });
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Close search if clicking outside
     document.addEventListener('click', (e) => {
-        if(!e.target.closest('.search-wrapper')) {
+        if (!e.target.closest('.search-wrapper')) {
             searchBars.forEach(bar => bar.classList.remove('active'));
         }
     });
@@ -110,20 +110,20 @@ document.addEventListener('DOMContentLoaded', () => {
             if (e.key === 'Enter') {
                 e.preventDefault();
                 const query = input.value.toLowerCase().trim();
-                if(!query) return;
+                if (!query) return;
 
                 // Simple Keyword Router for Static Site
-                if(query.includes('contact') || query.includes('touch') || query.includes('mail')) {
+                if (query.includes('contact') || query.includes('touch') || query.includes('mail')) {
                     window.location.href = 'contact.html';
-                } else if(query.includes('about') || query.includes('story') || query.includes('ethos')) {
+                } else if (query.includes('about') || query.includes('story') || query.includes('ethos')) {
                     window.location.href = 'about.html';
-                } else if(query.includes('privacy') || query.includes('policy')) {
+                } else if (query.includes('privacy') || query.includes('policy')) {
                     window.location.href = 'privacy-policy.html';
-                } else if(query.includes('term') || query.includes('condition')) {
+                } else if (query.includes('term') || query.includes('condition')) {
                     window.location.href = 'terms.html';
-                } else if(query.includes('living') || query.includes('bed') || query.includes('kitchen') || query.includes('bath') || query.includes('room')) {
+                } else if (query.includes('living') || query.includes('bed') || query.includes('kitchen') || query.includes('bath') || query.includes('room')) {
                     window.location.href = 'index.html#categories';
-                } else if(query.includes('blog') || query.includes('article') || query.includes('post') || query.includes('read')) {
+                } else if (query.includes('blog') || query.includes('article') || query.includes('post') || query.includes('read')) {
                     window.location.href = 'index.html#blog';
                 } else {
                     alert(`We couldn't find any direct matches for "${query}". Try searching for categories like 'Bedroom', 'Kitchen', or 'Blog'.`);
@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Category Filter Interactivity
     const filterBtns = document.querySelectorAll('.filter-btn');
-    
+
     // Auto-highlight active filter based on current page URL
     const currentPath = window.location.pathname.split('/').pop() || 'index.html';
     filterBtns.forEach(btn => {
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
             filterBtns.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
         }
-        
+
         btn.addEventListener('click', (e) => {
             // Add a subtle click animation before navigation
             btn.style.transform = 'scale(0.95)';
@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const input = form.querySelector('input[type="email"]');
             const email = input ? input.value : 'friend';
-            
+
             // Replace form content with success message
             form.innerHTML = `
                 <div style="padding: 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: rgba(58, 63, 62, 0.05); animation: fadein 0.5s;">
@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const nameInput = form.querySelector('#fullName');
             const name = nameInput ? nameInput.value : 'friend';
-            
+
             form.innerHTML = `
                 <div style="padding: 2rem; text-align: center; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: rgba(58, 63, 62, 0.05); animation: fadein 0.5s;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="var(--color-accent)" style="margin-bottom: 1rem;">
